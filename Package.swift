@@ -4,25 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "Reward-SDK-iOS-SwiftPackage",
+    name: "RakutenRewardSDK",
+    platforms: [.iOS(.v11)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Reward-SDK-iOS-SwiftPackage",
-            targets: ["Reward-SDK-iOS-SwiftPackage"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+            name: "RakutenRewardSDK",
+            targets: ["RakutenRewardSDK"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "Reward-SDK-iOS-SwiftPackage",
-            dependencies: []),
-        .testTarget(
-            name: "Reward-SDK-iOS-SwiftPackageTests",
-            dependencies: ["Reward-SDK-iOS-SwiftPackage"]),
+        .binaryTarget(
+            name: "RakutenRewardSDK",
+            url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/9.2.0/RakutenRewardSDK-9.2.0-3.xcframework.zip",
+            checksum: "ad9a020b2d864b177408dbbdacfcaeca28719138aa04b1f11528f9143b67a38b"
+        ),
     ]
 )
