@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RakutenRewardSDK",
-            url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/10.1.0/RakutenRewardSDK-10.1.0.xcframework.zip",
-            checksum: "0ab04860dc1dae700e10066dcb48f55daffab2f35d86748fe183383cbfe71b35"
+            url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/11.0.0/RakutenRewardSDK-11.0.0.xcframework.zip",
+            checksum: "2e2ff7c3d829467fa5244f33f198110bcf3fcb625350e43096dbfc827c3cacf7"
         ),
     ]
 )
